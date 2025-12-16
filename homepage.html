@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <title>Hôm nay ăn gì</title>
+</head>
+
+<body>
+    <!-- Thanh điều hướng -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="homepage.html">
+                <div class="brand">
+                    <span class="logo">Homnayangi</span>
+                </div>
+            </a>
+            <nav class="top-nav">
+                <a href="explore.html">Khám phá</a>
+                <a href="#">Ưu đãi</a>
+                <a href="#">Cộng đồng</a>
+            </nav>
+            <div class="header-actions">
+                <a href="cart.html">
+                    <button class="cart" aria-label="Giỏ hàng">🛒</button></a>
+                <a href="user.html">
+                    <div class="avatar"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thanh tìm kiếm -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <h1 class="hero-title">Bạn muốn ăn gì nào ?</h1>
+            <div class="search-wrap">
+                <label class="search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M21 21l-4.35-4.35" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="11" cy="11" r="6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <input type="search" placeholder="Tìm kiếm quán ăn, món ăn" aria-label="Tìm kiếm">
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu món ăn -->
+    <div class="category-section">
+        <div class="category-list">
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🍜</span>
+                </div>
+                <p class="category-name">Món chính</p>
+            </div>
+
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🥤</span>
+                </div>
+                <p class="category-name">Đồ uống</p>
+            </div>
+
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🍰</span>
+                </div>
+                <p class="category-name">Tráng miệng</p>
+            </div>
+
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🍟</span>
+                </div>
+                <p class="category-name">Ăn vặt</p>
+            </div>
+
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🥦</span>
+                </div>
+                <p class="category-name">Món chay</p>
+            </div>
+
+            <div class="category-item">
+                <div class="category-icon-bg">
+                    <span class="icon">🍲</span>
+                </div>
+                <p class="category-name">Lẩu</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gợi ý món ăn (Bạn chọn được món chưa ?)-->
+    <section class="suggestions-section">
+        <div class="section-header">
+            <h3 class="section-title">Bạn chọn được món chưa?</h3>
+            <a href="explore.html" class="view-all-link">Xem tất cả</a>
+        </div>
+        <div class="product-card-list">
+            <!-- Món 1 -->
+            <div class="product-card">
+                <a href="detailres.html">
+                <img src="img-hmain/bmdt.jpg" alt="Bánh mì dân tổ" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-name">Bánh mì dân tổ</h4>
+                    <p class="product-category">Bánh mì</p>
+                    <div class="product-details">
+                        <div class="rating">
+                            <span class="rating-text">5</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="distance">1 km</span>
+                        <span class="time">10 phút</span>
+                    </div>
+                    <p class="product-address">112 Trần Phú</p> </a>
+                </div>
+            </div>
+            <!-- Món 2 -->
+            <div class="product-card">
+                <img src="img-hmain/phn.jpg" alt="Phở Hà Nội" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-name">Phở Hà Nội</h4>
+                    <p class="product-category">Món nước</p>
+                    <div class="product-details">
+                        <div class="rating">
+                            <span class="rating-text">5</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="distance">200 m</span>
+                        <span class="time">2 phút</span>
+                    </div>
+                    <p class="product-address">Số 5 Ngõ 2 Ao Sen</p>
+                </div>
+            </div>
+            <!-- Món 3 -->
+            <div class="product-card">
+                <img src="img-hmain/bc.jpg" alt="Bún chả" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-name">Bún chả</h4>
+                    <p class="product-category">Món nước</p>
+                    <div class="product-details">
+                        <div class="rating">
+                            <span class="rating-text">5</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="distance">600 m</span>
+                        <span class="time">7 phút</span>
+                    </div>
+                    <p class="product-address">Số 3 Ngõ 6 Ao Sen</p>
+                </div>
+            </div>
+            <!-- Món 4 -->
+            <div class="product-card">
+                <img src="img-hmain/bdmt.jpg" alt="Bún đậu mắm tôm" class="product-image">
+                <div class="product-info">
+                    <h4 class="product-name">Bún đậu mắm tôm</h4>
+                    <p class="product-category">Món nước</p>
+                    <div class="product-details">
+                        <div class="rating">
+                            <span class="rating-text">4.9</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="distance">700 m</span>
+                        <span class="time">8 phút</span>
+                    </div>
+                    <p class="product-address">Số 30 Ngõ 6 Ao Sen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale -->
+    <div class="sale-section">
+        <section class="suggestions-section">
+            <div class="section-header">
+                <h3 class="section-title">Flash sale</h3>
+                <a href="#" class="view-all-link">Xem thêm</a>
+            </div>
+
+            <div class="product-card-list">
+                <div class="product-card">
+                    <a href="detailres.html">
+                    <img src="img-hmain/bmdt.jpg" alt="Bánh mì dân tổ" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">Bánh mì dân tổ</h4>
+                        <p class="product-category">Bánh mì</p>
+                        <div class="product-details">
+                            <div class="rating">
+                                <span class="rating-text">5</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="distance">1 km</span>
+                            <span class="time">10 phút</span>
+                        </div>
+                        <p class="product-address">112 Trần Phú</p></a>
+                    </div>
+                </div>
+                <!-- Món 2 -->
+                <div class="product-card">
+                    <img src="img-hmain/phn.jpg" alt="Phở Hà Nội" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">Phở Hà Nội</h4>
+                        <p class="product-category">Món nước</p>
+                        <div class="product-details">
+                            <div class="rating">
+                                <span class="rating-text">5</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="distance">200 m</span>
+                            <span class="time">2 phút</span>
+                        </div>
+                        <p class="product-address">Số 5 Ngõ 2 Ao Sen</p>
+                    </div>
+                </div>
+                <!-- Món 3 -->
+                <div class="product-card">
+                    <img src="img-hmain/bc.jpg" alt="Bún chả" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">Bún chả</h4>
+                        <p class="product-category">Món nước</p>
+                        <div class="product-details">
+                            <div class="rating">
+                                <span class="rating-text">5</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="distance">600 m</span>
+                            <span class="time">7 phút</span>
+                        </div>
+                        <p class="product-address">Số 3 Ngõ 6 Ao Sen</p>
+                    </div>
+                </div>
+                <!-- Món 4 -->
+                <div class="product-card">
+                    <img src="img-hmain/bdmt.jpg" alt="Bún đậu mắm tôm" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">Bún đậu mắm tôm</h4>
+                        <p class="product-category">Món nước</p>
+                        <div class="product-details">
+                            <div class="rating">
+                                <span class="rating-text">4.9</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="distance">700 m</span>
+                            <span class="time">8 phút</span>
+                        </div>
+                        <p class="product-address">Số 30 Ngõ 6 Ao Sen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Khám phá -->
+    <section class="suggestions-section">
+        <div class="section-header">
+            <h3 class="section-title">Khám phá</h3>
+            <a href="explore.html" class="view-all-link">Xem tất cả</a>
+        </div>
+
+        <!-- Hàng 1 -->
+        <div class="discovery-card-list">
+            <a href="detail.html" class="discovery-card">
+                <img src="img-hmain/bmdt.jpg" alt="Bánh mì" class="discovery-image">
+                <p class="discovery-name">Bánh mì</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/phn.jpg" alt="Phở Hà Nội" class="discovery-image">
+                <p class="discovery-name">Phở Hà Nội</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/bdmt.jpg" alt="BDMT" class="discovery-image">
+                <p class="discovery-name">Bún đậu mắm tôm</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/bc.jpg" alt="BC" class="discovery-image">
+                <p class="discovery-name">Bún chả</p>
+            </a>
+        </div>
+        <!-- Hàng 2 -->
+        <div class="discovery-card-list">
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/nnnt.jpg" alt="Bánh mì" class="discovery-image">
+                <p class="discovery-name">Nem nướng Nha Trang</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/mn.jpg" alt="Phở Hà Nội" class="discovery-image">
+                <p class="discovery-name">Miến ngan</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/xls.jpg" alt="BDMT" class="discovery-image">
+                <p class="discovery-name">Xôi lá sen</p>
+            </a>
+            <a href="#" class="discovery-card">
+                <img src="img-hmain/bt.jpg" alt="BC" class="discovery-image">
+                <p class="discovery-name">Bún thang</p>
+            </a>
+        </div>
+
+        <img src="img-hmain/taiappngayrinhqualientay.png" class="taiapp">
+    </section>
+
+    <!-- Cộng đồng -->
+    <section class="community-section">
+        <div class="section-header">
+            <h3 class="section-title">Cộng đồng</h3>
+            <a href="#" class="view-all-link">Xem tất cả</a>
+        </div>
+
+        <div class="review-card-list">
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="com-avatar"></div>
+                    <p class="reviewer-name">Anatony đã đánh giá Bún cá Đức Bắc</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+                <div class="review-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                </div>
+                <p class="review-text">
+                    Đến quán vào giờ khuya và vừa đến Hà Nội. Quán có không gian trang trí theo kiểu cổ kính, anh chị
+                    nhân viên khá thân thiện, order và lên món nhanh. Món phở tái nạm ăn ngọt nước, vị đậm, bánh quẩy
+                    dùng kèm ăn lạ miệng. Giá dao động 60-70k đánh giá phù hợp...
+                </p>
+                <div class="review-footer">
+                    <span class="time-ago">1 giờ trước</span>
+                    <a href="#" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="com-avatar"></div>
+                    <p class="reviewer-name">Anonymous đã đánh giá Phở Thìn</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+                <div class="review-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                </div>
+                <p class="review-text">
+                    Mặc dù quán bán cơm là chính nhưng mà món mì của quán lại nổi hơn =))) và cũng siêu ngon nữa. Nước
+                    dùng thơm và thịt cũng mềm, ăn cùng với nhau siêu hợp.Mình đi với 2 bạn khác, order có 2 nồi mà ăn
+                    no căng bụng luôn.Mọi người đến ăn thử nhé (ăn thử cơm cho quán vui nữa nha =))
+                <div class="review-footer">
+                    <span class="time-ago">3 giờ trước</span>
+                    <a href="#" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="com-avatar"></div>
+                    <p class="reviewer-name">Anonymous đã đánh giá Bánh đa cá</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+                <div class="review-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                </div>
+                <p class="review-text">
+                    Đến quán vào giờ khuya và vừa đến Hà Nội. Quán có không gian trang trí theo kiểu cổ kính, anh chị
+                    nhân viên khá thân thiện, order và lên món nhanh. Món phở tái nạm ăn ngọt nước, vị đậm, bánh quẩy
+                    dùng kèm ăn lạ miệng. Giá dao động 60-70k đánh giá phù hợp...
+                </p>
+                <div class="review-footer">
+                    <span class="time-ago">6 giờ trước</span>
+                    <a href="#" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <h3 class="footer-logo">HOMNAYANGI</h3>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-middle">
+                <div class="footer-links-col">
+                    <a href="#">About HOMNAYANGI</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer-links-col">
+                    <a href="#">FAQs</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer-social-col">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="app-buttons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                        alt="Get it on Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                        alt="Download on the App Store">
+                </div>
+                <div class="legal-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

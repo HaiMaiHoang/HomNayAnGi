@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homnayangi - Đặt Bánh Mì Dân Tổ</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="header-content container">
+            <div class="header-left">
+                <a href="homepage.html" class="logo">Homnayangi</a>
+                <nav class="top-nav">
+                    <a href="explore.html">Khám phá</a>
+                    <a href="#">Ưu đãi</a>
+                    <a href="#">Cộng đồng</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count"></span> 
+                </a>
+                <div class="user-avatar"></div>
+            </div>
+        </div>
+        <div class="header-bottom-line"></div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-body">
+        <div class="container main-container">
+            <div class="sub-nav" style="padding: 25px 0;">
+                <a href="homepage.html"><span>Trang chủ</span></a>
+                <span>&gt;</span>
+                <a href="explore.html"><span>Khám phá</span></a>
+                <span>&gt;</span>
+                <a href="detail.html"><span>Bánh mì</span></a>
+                <span>&gt;</span>
+                <a class = "active"><span>Chi tiết</span></a>
+            </div>
+
+            <!-- ===== ITEM DETAIL BANNER ===== -->
+            <section class="item-detail-banner">
+                <div class="item-image">
+                    <img src="images/bm7.webp" alt="Bánh mì dân tổ">
+                </div>
+                <div class="item-info">
+                    <h1>Bánh mì dân tổ</h1>
+                    <p class="address">Địa chỉ</p>
+                    <p class="category">Bánh Mì</p>
+                    <div class="stats">
+                        <span class="rating"><i class="fas fa-star"></i> 5</span>
+                        <span class="distance">2,5 km</span>
+                        <span class="time">30 phút</span>
+                    </div>
+                    <p class="status">Đang mở: 7:00 - 22:00</p>
+                </div>
+            </section>
+
+            <!-- ===== SECTION NAV ===== -->
+            <nav class="section-nav">
+                <a href="#uudai-homnay" class="nav-item active">Ưu đãi hôm nay</a>
+                <a href="#combo" class="nav-item">Combo</a>
+                <a href="#banhmy" class="nav-item">Bánh mỳ</a>
+                <a href="#douong" class="nav-item">Đồ uống</a>
+            </nav>
+            <div class="section-nav-line"></div>
+
+            <!-- ===== MENU SECTIONS ===== -->
+            <section id="uudai-homnay" class="menu-section">
+                <h2>Ưu đãi hôm nay</h2>
+                <div class="menu-grid"></div>
+            </section>
+
+            <section id="combo" class="menu-section">
+                <h2>Combo</h2>
+                <div class="menu-grid"></div>
+            </section>
+
+            <section id="banhmy" class="menu-section">
+                <h2>Bánh mỳ</h2>
+                <div class="menu-grid"></div>
+            </section>
+
+            <section id="douong" class="menu-section">
+                <h2>Đồ uống</h2>
+                <div class="drink-grid"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col footer-logo-section">
+                <div class="footer-logo">HOMNAYANGI</div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <a href="#">ABOUT HOMNAYANGI</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#">FAQs</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer-col social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="app-downloads">
+                    <img src="google-play-badge.png" alt="Google Play">
+                    <img src="app-store-badge.png" alt="App Store">
+                </div>
+                <div class="policy-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= TOAST ================= -->
+    <div id="cart-toast" class="cart-toast">
+        <i class="fas fa-check-circle toast-icon"></i>
+        <span id="toast-message">Đã thêm sản phẩm vào giỏ hàng!</span>
+    </div>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="data.js"></script>
+    <script src="utils.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

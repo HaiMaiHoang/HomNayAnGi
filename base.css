@@ -1,0 +1,399 @@
+/* base.css - KIỂU CƠ SỞ VÀ CHUNG CHO TOÀN BỘ TRANG WEB */
+
+/* Thiết lập chung */
+:root {
+    --primary-color: #ff7d00;
+    --secondary-color: #333;
+    --text-color: #555;
+    --dark-text: #1a1a1a;
+    --light-grey-bg: #f5f5f5;
+    --border-color: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* --- HEADER --- */
+.main-header {
+    background-color: #fff;
+    padding: 10px 0 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+
+.top-nav a {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon i {
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+/* Định kiểu cho badge giỏ hàng */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 5px;
+    min-width: 18px;
+    height: 18px;
+    display: none; /* Mặc định ẩn, JS sẽ bật lên */
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    z-index: 10;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.header-bottom-line {
+    height: 2px;
+    background-color: #e6e6e6;
+    width: 100%;
+}
+
+/* --- MAIN BODY & BREADCRUMB --- */
+.main-body {
+    background-color: var(--light-grey-bg); 
+    padding-bottom: 50px;
+}
+
+.main-container {
+    padding-top: 20px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: #999;
+}
+
+.breadcrumb span {
+    color: var(--dark-text);
+    font-weight: bold;
+}
+
+.breadcrumb i {
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+.page-title {
+    font-size: 30px;
+    color: var(--dark-text);
+    margin-bottom: 30px;
+}
+
+/* --- TOAST NOTIFICATION STYLES --- */
+.cart-toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #388e3c; 
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(100px); 
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    z-index: 1000; 
+}
+
+.cart-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
+}
+
+.toast-icon {
+    font-size: 20px;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-section {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.footer-col.social-icons {
+    flex-direction: row;
+    justify-content: flex-end; 
+    gap: 20px;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    color: white;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.app-downloads {
+    display: flex;
+    gap: 10px;
+}
+
+.app-downloads img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.policy-links a {
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+/* --- FORM BASE STYLES --- */
+.form-group input[type="text"],
+.checkout-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--dark-text);
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.checkout-section textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.checkout-section textarea {
+    resize: vertical;
+}
+
+/* --- SUMMARY BASE STYLES (Dùng chung cho Cart và Checkout) --- */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.summary-separator {
+    border-top: 1px solid var(--border-color);
+    margin: 15px 0;
+}
+
+/* --- BUTTON CHUNG --- */
+.checkout-btn, .confirm-checkout-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.checkout-btn:hover, .confirm-checkout-btn:hover {
+    background-color: #e57e00;
+}
+
+
+/* --- CUSTOM MODAL STYLES --- */
+
+/* Lớp phủ (Overlay) làm mờ nền */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền tối mờ */
+    display: none; /* Mặc định ẩn */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Hộp thoại chính */
+.custom-modal {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Định kiểu nội dung modal */
+.custom-modal p {
+    font-size: 18px;
+    color: var(--dark-text);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.modal-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #e57e00;
+}
+
+.secondary-btn {
+    background-color: #ccc;
+    color: var(--dark-text);
+}
+
+.secondary-btn:hover {
+    background-color: #bbb;
+}
+
+.success-modal .modal-actions {
+    flex-wrap: wrap; 
+}
+
+.success-modal .modal-btn {
+    flex-grow: 1; 
+}

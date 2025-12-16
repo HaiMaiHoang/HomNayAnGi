@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Homnayangi</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="header-content container">
+            <div class="header-left">
+                <a href="Index.html" class="logo">Homnayangi</a>
+                <nav class="top-nav">
+                    <a href="#">Khám phá</a>
+                    <a href="#">Ưu đãi</a>
+                    <a href="#">Cộng đồng</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count"></span> 
+                </a>
+                <div class="user-avatar"></div>
+            </div>
+        </div>
+        <div class="header-bottom-line"></div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-body">
+        <div class="container main-container">
+
+            <!-- ===== BREADCRUMB ===== -->
+            <div class="breadcrumb">
+                <a href="Index.html">Trang chủ</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Giỏ hàng</span>
+            </div>
+
+            <!-- ===== PAGE TITLE ===== -->
+            <h1 class="page-title">Giỏ hàng</h1>
+
+            <!-- ===== CART LAYOUT ===== -->
+            <div class="cart-layout">
+
+                <!-- Danh sách sản phẩm -->
+                <div class="cart-items-list"></div>
+
+                <!-- Tóm tắt đơn hàng -->
+                <div class="cart-summary">
+                    <h2 class="summary-title">Tóm tắt đơn hàng</h2>
+
+                    <div class="summary-row">
+                        <span>Tạm tính</span>
+                        <span class="summary-price summary-subtotal-price">0đ</span> 
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Phí vận chuyển</span>
+                        <span class="summary-price summary-shipping-price">15.000đ</span> 
+                    </div>
+
+                    <div class="summary-separator"></div>
+
+                    <div class="summary-row total-row">
+                        <span>Tổng cộng</span>
+                        <span class="summary-price total-price">0đ</span>
+                    </div>
+
+                    <!-- Nút thanh toán -->
+                    <a href="checkout.html" class="checkout-btn"
+                       style="text-align: center; display: block; text-decoration: none;">
+                        Thanh toán
+                    </a>
+
+                    <div class="shipping-note">
+                        <i class="fas fa-truck"></i>
+                        Miễn phí vận chuyển cho đơn hàng trên 100.000đ
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col footer-logo-section">
+                <div class="footer-logo">HOMNAYANGI</div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <a href="#">ABOUT HOMNAYANGI</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#">FAQs</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer-col social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="app-downloads">
+                    <img src="google-play-badge.png" alt="Google Play">
+                    <img src="app-store-badge.png" alt="App Store">
+                </div>
+                <div class="policy-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="utils.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

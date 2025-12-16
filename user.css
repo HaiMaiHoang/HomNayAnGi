@@ -1,0 +1,244 @@
+/* --- CSS GLOBAL CƠ BẢN (Dùng lại nếu cần) --- */
+:root {
+    --primary-color: #ff5722; 
+    --secondary-color: #f0f0f0;
+     --accent-1: #ff8a00;
+    --accent-2: #ff5e00;
+    --border-color: #e0e0e0;
+}
+
+
+/* --- TRANG PROFILE CHÍNH (Profile Page Content) --- */
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;    /* Căn giữa */
+    padding: 0 20px;   /* Thêm padding 2 bên cho màn hình nhỏ */
+}
+
+/* --- Cột Trái: SIDEBAR --- */
+.profile-sidebar {
+    flex: 0 0 300px; /* Chiều rộng cố định cho sidebar */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-info-summary {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.user-avatar-lg {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.user-name-summary {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item-profile {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item-profile:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.nav-item-profile.active {
+    background-color: var(--accent-1);
+    color: white;
+    font-weight: 600;
+}
+
+.nav-item-profile.active .nav-icon {
+    color: white !important; /* Đảm bảo icon màu trắng */
+}
+
+.nav-icon {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.nav-item-profile.logout {
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    color: var(--accent-1); /* Màu đỏ cho Đăng xuất */
+}
+
+.nav-item-profile.logout .nav-icon {
+    color: var(--accent-1);
+}
+
+/* --- Cột Phải: MAIN CONTENT (FORM) --- */
+
+.profile-main-content {
+    width: 820px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Avatar Edit Area */
+.avatar-edit-area {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.user-avatar-md {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar-edit-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name-edit {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.btn-change-avatar {
+    background: none;
+    border: none;
+    color: var(--accent-1);
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
+}
+
+/* Form Styling */
+.personal-info-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row.full-width {
+    grid-column: 1 / 3; /* Chiếm cả 2 cột */
+}
+
+.form-row label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="tel"],
+.form-row input[type="email"],
+.form-row input[type="date"] {
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.form-row input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Giới tính Radio Buttons */
+.gender-options {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+.gender-divider {
+    grid-column: 1 / 3;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Nút Lưu */
+.btn-save {
+    grid-column: 1 / 3;
+    background-color: var(--accent-2);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 150px; /* Giới hạn chiều rộng nút */
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+    background-color: #e64a19;
+}
