@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // BƯỚC CHẠY 10: Chuyển hướng khi hoàn tất
     goHomeBtn.addEventListener('click', function() {
-        window.location.href = 'Index.html'; 
+        window.location.href = 'homepage.html'; 
     });
     
     // BƯỚC CHẠY CUỐI: Khởi chạy render chi tiết đơn hàng khi DOM tải xong

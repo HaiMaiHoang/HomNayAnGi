@@ -248,6 +248,7 @@ body {
 }
 
 .product-name {
+    color: #222;
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 5px 0;

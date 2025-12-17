@@ -84,6 +84,9 @@ a {
     color: var(--secondary-color);
 }
 
+.active{
+    color: var(--primary-color);
+}
 /* Định kiểu cho badge giỏ hàng */
 .cart-count {
     position: absolute;
